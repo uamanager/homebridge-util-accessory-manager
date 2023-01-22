@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/uamanager/homebridge-util-accessory-manager/compare/v0.0.3...v0.0.4) (2023-01-22)
+
+
+### Bug Fixes
+
+* building artifacts ([327f16c](https://github.com/uamanager/homebridge-util-accessory-manager/commit/327f16cf0e54c98221f4c7953da7f372f2076093))
+
 ### [0.0.3](https://github.com/uamanager/homebridge-util-accessory-manager/compare/v0.0.2...v0.0.3) (2023-01-22)
 
 
