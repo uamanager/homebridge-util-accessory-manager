@@ -8,13 +8,14 @@
       "es2017",
       "es2018"
     ],
-    "declaration": false,
-    "declarationMap": false,
+    "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
+    "preserveConstEnums": true,
     "noImplicitAny": false,
     "resolveJsonModule": true
   },
