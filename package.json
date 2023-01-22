@@ -2,7 +2,7 @@
   "private": false,
   "displayName": "Homebridge Util Accessory Manager",
   "name": "homebridge-util-accessory-manager",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utility for managing Homebridge accessories cache.",
   "license": "Apache-2.0",
   "repository": {
