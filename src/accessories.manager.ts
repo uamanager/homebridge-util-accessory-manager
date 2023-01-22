@@ -13,7 +13,6 @@ export class AccessoriesManager<AT extends AccessoryAbstract<AC>, AC extends IAc
     protected readonly platformName: string,
     protected readonly api: API,
     protected readonly platform: DynamicPlatformPlugin,
-    protected readonly settings: any,
   ) {
     this._cacheManager = new AccessoriesCache(logger);
     this.logger.debug('Finished initializing accessories manager');
