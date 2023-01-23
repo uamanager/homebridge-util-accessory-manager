@@ -1,15 +1,15 @@
 import {Logger, PlatformAccessory} from 'homebridge';
-import {IAccessoryContext} from './accessory.context';
+import {IBaseAccessoryContext} from './accessory.context';
 
-export class AccessoriesCache<AC extends IAccessoryContext> {
+export class AccessoriesCache<AC extends IBaseAccessoryContext> {
   private _cache: Map<string, PlatformAccessory<AC>> = new Map();
 
-  constructor(private readonly logger: Logger) {
-    this.logger.debug('Finished initializing accessories cache');
+  constructor(private readonly $_logger?: Logger) {
+    this.$_logger && this.$_logger.debug('Finished initializing accessories cache');
   }
 
   add(uuid: string, accessory: PlatformAccessory<AC>) {
-    this.logger.debug(
+    this.$_logger && this.$_logger.debug(
       'Adding existing accessory to cache manager:',
       uuid,
       accessory.displayName,
@@ -26,7 +26,7 @@ export class AccessoriesCache<AC extends IAccessoryContext> {
   }
 
   remove(uuid: string): PlatformAccessory<AC> | undefined {
-    this.logger.debug(
+    this.$_logger && this.$_logger.debug(
       'Trying to remove existing accessory from cache manager:',
       uuid,
     );
@@ -34,7 +34,7 @@ export class AccessoriesCache<AC extends IAccessoryContext> {
 
     if (_accessory) {
       this._cache.delete(uuid);
-      this.logger.debug(
+      this.$_logger && this.$_logger.debug(
         'Removing existing accessory from cache manager:',
         uuid,
         _accessory.displayName,

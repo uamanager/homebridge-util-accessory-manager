@@ -1,4 +1,4 @@
-export interface IAccessoryContext {
+export interface IBaseAccessoryContext {
   manufacturer: string;
   model: string;
   name: string;
