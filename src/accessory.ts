@@ -1,5 +1,5 @@
-import {API, ConstructorArgs, Logger, PlatformAccessory, Service, WithUUID} from 'homebridge';
-import {IBaseAccessoryContext} from './accessory.context';
+import { API, ConstructorArgs, Logger, PlatformAccessory, Service, WithUUID } from 'homebridge';
+import { IBaseAccessoryContext } from './accessory.context';
 
 export interface IBaseAccessoryCtor<T> {
   new(

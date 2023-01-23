@@ -1,5 +1,5 @@
-import {Logger, PlatformAccessory} from 'homebridge';
-import {IBaseAccessoryContext} from './accessory.context';
+import { Logger, PlatformAccessory } from 'homebridge';
+import { IBaseAccessoryContext } from './accessory.context';
 
 export class AccessoriesCache<AC extends IBaseAccessoryContext> {
   private _cache: Map<string, PlatformAccessory<AC>> = new Map();

@@ -1,7 +1,7 @@
-import {API, Logger, PlatformAccessory} from 'homebridge';
-import {AccessoriesCache} from './accessories.cache';
-import {BaseAccessory, IBaseAccessoryCtor} from './accessory';
-import {IBaseAccessoryContext} from './accessory.context';
+import { API, Logger, PlatformAccessory } from 'homebridge';
+import { AccessoriesCache } from './accessories.cache';
+import { BaseAccessory, IBaseAccessoryCtor } from './accessory';
+import { IBaseAccessoryContext } from './accessory.context';
 
 export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAccessoryContext> {
   private _accessories: Map<string, AT> = new Map();
@@ -43,7 +43,7 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
     const _cachedAccessory = this.$_cacheManager.remove(uuid);
 
     if (_cachedAccessory) {
-      _cachedAccessory.context = {...context};
+      _cachedAccessory.context = { ...context };
 
       this._accessories.set(uuid, new ctor(
         this.$_api,
@@ -52,13 +52,14 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
       ));
 
 
-      this.$_logger && this.$_logger.debug('Updating accessory:', uuid, _cachedAccessory.displayName);
+      this.$_logger
+      && this.$_logger.debug('Updating accessory:', uuid, _cachedAccessory.displayName);
 
       return this.$_api.updatePlatformAccessories([_cachedAccessory]);
     } else {
       const _accessory = new this.$_api.platformAccessory(context.name, uuid);
 
-      _accessory.context = {...context};
+      _accessory.context = { ...context };
 
       this._accessories.set(uuid, new ctor(
         this.$_api,
@@ -66,7 +67,8 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
         this.$_logger,
       ));
 
-      this.$_logger && this.$_logger.debug('Registering accessory:', uuid, _accessory.displayName);
+      this.$_logger
+      && this.$_logger.debug('Registering accessory:', uuid, _accessory.displayName);
 
       this.$_api.registerPlatformAccessories(
         this._pluginName,
@@ -87,6 +89,7 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
       this._accessories.delete(uuid);
     }
 
-    this.$_logger && this.$_logger.debug('Unregistering accessory:', uuid, accessory.displayName);
+    this.$_logger
+    && this.$_logger.debug('Unregistering accessory:', uuid, accessory.displayName);
   }
 }
