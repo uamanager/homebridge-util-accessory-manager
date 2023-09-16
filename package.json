@@ -24,8 +24,8 @@
     "url": "https://github.com/uamanager/homebridge-util-accessory-manager/issues"
   },
   "engines": {
-    "node": ">=14.18.1",
-    "homebridge": ">=1.3.5"
+    "node": ">=16",
+    "homebridge": ">=1.6.1"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
