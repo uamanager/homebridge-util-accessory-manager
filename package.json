@@ -38,7 +38,7 @@
   "scripts": {
     "lint": "eslint src/**.ts --max-warnings=0",
     "watch": "npm run build && nodemon",
-    "prebuild": "rimraf ./dist",
+    "prebuild": "rm -rf ./dist",
     "build": "tsc",
     "prepublishOnly": "npm run lint && npm run build",
     "postversion": "git push && git push --tags",
@@ -56,7 +56,6 @@
     "eslint": "8.49.0",
     "homebridge": "1.6.1",
     "nodemon": "3.0.1",
-    "rimraf": "5.0.1",
     "standard-version": "9.5.0",
     "ts-node": "10.9.1",
     "typescript": "5.2.2"
