@@ -37,7 +37,7 @@
     "build": "tsc",
     "prepublishOnly": "yarn lint && yarn build",
     "postversion": "git push && git push --tags",
-    "release": "yarn lint && yarn build && standard-version -a && git push --follow-tags origin master && yarn publish"
+    "release": "yarn lint && yarn build && commit-and-tag-version -a && git push --follow-tags origin master && yarn publish"
   },
   "keywords": [
     "homebridge",
@@ -52,7 +52,7 @@
     "@typescript-eslint/parser": "7.14.1",
     "eslint": "9.6.0",
     "homebridge": "1.8.3",
-    "standard-version": "9.5.0",
+    "commit-and-tag-version": "12.4.1",
     "ts-node": "10.9.2",
     "typescript": "5.5.2"
   },
