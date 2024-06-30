@@ -21,7 +21,7 @@ export class AccessoriesCache<AC extends IBaseAccessoryContext> {
     value: PlatformAccessory<AC>,
     key: string,
     map: Map<string, PlatformAccessory<AC>>,
-  ) => void, thisArg?) {
+  ) => void, thisArg?: unknown) {
     this._cache.forEach(callbackFn, thisArg);
   }
 
