@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.16](https://github.com/uamanager/homebridge-util-accessory-manager/compare/v0.0.15...v0.0.16) (2024-06-30)
+
+
+### Features
+
+* **logger:** accessory logger ([8989676](https://github.com/uamanager/homebridge-util-accessory-manager/commit/89896769fe5ecd3919a5eb55a7b6ed6e9ad03802))
+
 ## [0.0.15](https://github.com/uamanager/homebridge-util-accessory-manager/compare/v0.0.14...v0.0.15) (2024-06-30)
 
 ## [0.0.14](https://github.com/uamanager/homebridge-util-accessory-manager/compare/v0.0.13...v0.0.14) (2024-06-30)
