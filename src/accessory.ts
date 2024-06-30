@@ -1,5 +1,5 @@
 import { API, ConstructorArgs, Logger, PlatformAccessory, Service, WithUUID } from 'homebridge';
-import { IBaseAccessoryContext } from './accessory.context';
+import { IBaseAccessoryContext } from './accessory.context.js';
 
 export interface IBaseAccessoryCtor<T> {
   new(

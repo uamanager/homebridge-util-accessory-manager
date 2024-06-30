@@ -4,6 +4,7 @@
   "name": "homebridge-util-accessory-manager",
   "version": "0.0.15",
   "description": "Utility for managing Homebridge accessories cache.",
+  "type": "module",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",

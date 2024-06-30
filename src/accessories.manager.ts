@@ -1,7 +1,7 @@
 import { API, Logger, PlatformAccessory } from 'homebridge';
 import { AccessoriesCache } from './accessories.cache';
-import { BaseAccessory, IBaseAccessoryCtor } from './accessory';
-import { IBaseAccessoryContext } from './accessory.context';
+import { BaseAccessory, IBaseAccessoryCtor } from './accessory.js';
+import { IBaseAccessoryContext } from './accessory.context.js';
 
 export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAccessoryContext> {
   private _accessories: Map<string, AT> = new Map();
