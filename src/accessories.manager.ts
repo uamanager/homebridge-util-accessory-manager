@@ -1,5 +1,5 @@
 import { API, Logger, PlatformAccessory } from 'homebridge';
-import { AccessoriesCache } from './accessories.cache';
+import { AccessoriesCache } from './accessories.cache.js';
 import { BaseAccessory, IBaseAccessoryCtor } from './accessory.js';
 import { IBaseAccessoryContext } from './accessory.context.js';
 
