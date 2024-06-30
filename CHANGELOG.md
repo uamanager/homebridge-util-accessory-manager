@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.17](https://github.com/uamanager/homebridge-util-accessory-manager/compare/v0.0.16...v0.0.17) (2024-06-30)
+
+
+### Bug Fixes
+
+* **accessories.manager:** type module ([7e47b3e](https://github.com/uamanager/homebridge-util-accessory-manager/commit/7e47b3e985482955672aa0e5e8fd8da72e11f7be))
+
 ## [0.0.16](https://github.com/uamanager/homebridge-util-accessory-manager/compare/v0.0.15...v0.0.16) (2024-06-30)
 
 
