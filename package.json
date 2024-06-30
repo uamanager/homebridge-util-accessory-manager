@@ -24,8 +24,8 @@
     "url": "https://github.com/uamanager/homebridge-util-accessory-manager/issues"
   },
   "engines": {
-    "node": ">=16",
-    "homebridge": ">=1.6.1"
+    "node": "^18.15.0 || ^20.7.0",
+    "homebridge": ">=1.8.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,12 +37,12 @@
   ],
   "scripts": {
     "lint": "eslint src/**.ts --max-warnings=0",
-    "watch": "npm run build && nodemon",
+    "watch": "yarn build && nodemon",
     "prebuild": "rm -rf ./dist",
     "build": "tsc",
-    "prepublishOnly": "npm run lint && npm run build",
+    "prepublishOnly": "yarn lint && yarn build",
     "postversion": "git push && git push --tags",
-    "release": "npm run lint && npm run build && standard-version -a && git push --follow-tags origin master && yarn publish"
+    "release": "yarn lint && yarn build && standard-version -a && git push --follow-tags origin master && yarn publish"
   },
   "keywords": [
     "homebridge",
@@ -51,8 +51,8 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "20.14.9",
-    "@typescript-eslint/eslint-plugin": "7.2.0",
-    "@typescript-eslint/parser": "7.2.0",
+    "@typescript-eslint/eslint-plugin": "7.14.1",
+    "@typescript-eslint/parser": "7.14.1",
     "eslint": "8.57.0",
     "homebridge": "1.8.3",
     "nodemon": "3.1.4",
