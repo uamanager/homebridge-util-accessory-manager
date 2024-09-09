@@ -581,10 +581,10 @@ commander@12.1.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-12.1.0.tgz#01423b36f501259fdaac4d0e4d60c96c991585d3"
   integrity sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==
 
-commit-and-tag-version@12.4.2:
-  version "12.4.2"
-  resolved "https://registry.yarnpkg.com/commit-and-tag-version/-/commit-and-tag-version-12.4.2.tgz#98cc351a7dc58bcc14908f17952a7f0606004413"
-  integrity sha512-K8EPV/vRM+PZCFqu1anHUyxPt8Q9dUUHU4WRE9a2GcHYfZPgu2GGKLxI018W/y+EZ7AbV0/P7QrLn5/lpcRyAg==
+commit-and-tag-version@12.4.3:
+  version "12.4.3"
+  resolved "https://registry.yarnpkg.com/commit-and-tag-version/-/commit-and-tag-version-12.4.3.tgz#e1d596b118156b8cd4ea333a5d3cbefe98322eb0"
+  integrity sha512-q+DaQ4QmvDjU3QBUfZmiH3CCL5Jf3saJ0I9dI1hL9equA4ZosoOkg3eya5q0qAc5T0eow+gF0DfKZskRbm4Shw==
   dependencies:
     chalk "^2.4.2"
     conventional-changelog "4.0.0"
@@ -597,7 +597,7 @@ commit-and-tag-version@12.4.2:
     figures "^3.1.0"
     find-up "^5.0.0"
     git-semver-tags "^5.0.0"
-    jsdom "^24.1.1"
+    jsdom "^25.0.0"
     semver "^7.6.3"
     w3c-xmlserializer "^5.0.0"
     yaml "^2.4.1"
@@ -1761,10 +1761,10 @@ js-yaml@^4.1.0:
   dependencies:
     argparse "^2.0.1"
 
-jsdom@^24.1.1:
-  version "24.1.1"
-  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-24.1.1.tgz#f41df8f4f3b2fbfa7e1bdc5df62c9804fd14a9d0"
-  integrity sha512-5O1wWV99Jhq4DV7rCLIoZ/UIhyQeDR7wHVyZAHAshbrvZsLs+Xzz7gtwnlJTJDjleiTKh54F4dXrX70vJQTyJQ==
+jsdom@^25.0.0:
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-25.0.0.tgz#d1612b4ddab85af56821b2f731e15faae135f4e1"
+  integrity sha512-OhoFVT59T7aEq75TVw9xxEfkXgacpqAhQaYgP9y/fDqWQCMB/b1H66RfmPm/MaeaAIU9nDwMOVTlPN51+ao6CQ==
   dependencies:
     cssstyle "^4.0.1"
     data-urls "^5.0.0"
