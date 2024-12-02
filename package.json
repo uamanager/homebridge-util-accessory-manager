@@ -59,6 +59,6 @@
   },
   "resolutions": {
     "minimist": "1.2.8",
-    "rimraf": "5.0.7"
+    "rimraf": "5.0.10"
   }
 }
