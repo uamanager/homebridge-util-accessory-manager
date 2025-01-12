@@ -11,10 +11,10 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
     protected readonly _pluginName: string,
     protected readonly _platformName: string,
     protected readonly $_api: API,
-    protected readonly $_logger?: Logger,
+    protected readonly $_logger: Logger,
   ) {
     this.$_cacheManager = new AccessoriesCache($_logger);
-    this.$_logger && this.$_logger.debug('Finished initializing accessories manager');
+    this.$_logger.debug('Finished initializing accessories manager');
   }
 
   cache(uuid: string, accessory: PlatformAccessory<AC>) {
@@ -28,7 +28,7 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
         this.unregister(key, value);
       }
     });
-    this.$_logger && this.$_logger.debug('Finished cleaning accessories cache');
+    this.$_logger.debug('Finished cleaning accessories cache');
   }
 
   get<T extends AT = AT>(uuid: string): T | undefined {
@@ -52,8 +52,7 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
       ));
 
 
-      this.$_logger
-      && this.$_logger.debug('Updating accessory:', uuid, _cachedAccessory.displayName);
+      this.$_logger.debug('Updating accessory:', uuid, _cachedAccessory.displayName);
 
       return this.$_api.updatePlatformAccessories([_cachedAccessory]);
     } else {
@@ -67,8 +66,7 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
         this.$_logger,
       ));
 
-      this.$_logger
-      && this.$_logger.debug('Registering accessory:', uuid, _accessory.displayName);
+      this.$_logger.debug('Registering accessory:', uuid, _accessory.displayName);
 
       this.$_api.registerPlatformAccessories(
         this._pluginName,
@@ -89,7 +87,6 @@ export class AccessoriesManager<AT extends BaseAccessory<AC>, AC extends IBaseAc
       this._accessories.delete(uuid);
     }
 
-    this.$_logger
-    && this.$_logger.debug('Unregistering accessory:', uuid, accessory.displayName);
+    this.$_logger.debug('Unregistering accessory:', uuid, accessory.displayName);
   }
 }

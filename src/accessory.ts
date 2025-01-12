@@ -5,7 +5,7 @@ export interface IBaseAccessoryCtor<T> {
   new(
     $_api: API,
     _accessory: PlatformAccessory<IBaseAccessoryContext>,
-    $_logger?: Logger,
+    $_logger: Logger,
   ): T;
 }
 
@@ -13,7 +13,7 @@ export abstract class BaseAccessory<AC extends IBaseAccessoryContext> {
   protected constructor(
     protected readonly $_api: API,
     protected readonly _accessory: PlatformAccessory<AC>,
-    protected readonly $_logger?: Logger,
+    protected readonly $_logger: Logger,
   ) {
   }
 
