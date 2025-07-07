@@ -1,16 +1,9 @@
 {
-  "extends": [
-    "config:base",
-    ":dependencyDashboard"
-  ],
-  "labels": [
-    "dependencies"
-  ],
+  "extends": ["config:recommended", ":dependencyDashboard"],
+  "labels": ["dependencies"],
   "packageRules": [
     {
-      "matchDepTypes": [
-        "devDependencies"
-      ],
+      "matchDepTypes": ["devDependencies"],
       "automerge": true
     }
   ]
