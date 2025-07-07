@@ -1,4 +1,6 @@
-export interface IBaseAccessoryContext {
+import { UnknownContext } from 'homebridge';
+
+export interface IBaseAccessoryContext extends UnknownContext {
   manufacturer: string;
   model: string;
   name: string;
