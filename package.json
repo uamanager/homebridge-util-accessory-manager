@@ -6,6 +6,7 @@
   "description": "Utility for managing Homebridge accessories cache.",
   "type": "module",
   "license": "Apache-2.0",
+  "homepage": "https://github.com/uamanager/homebridge-util-accessory-manager#readme",
   "repository": {
     "type": "git",
     "url": "git://github.com/uamanager/homebridge-util-accessory-manager.git"
@@ -24,12 +25,12 @@
   "bugs": {
     "url": "https://github.com/uamanager/homebridge-util-accessory-manager/issues"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "engines": {
-    "node": "^20.18.0 || ^22.10.0",
+    "node": "^20.18.0 || ^22.10.0 || ^24.0.0",
     "homebridge": "^1.8.0 || ^2.0.0-beta.0"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/*",
     "README.md",
@@ -42,24 +43,24 @@
     "build": "tsc",
     "prepublishOnly": "yarn lint && yarn build",
     "postversion": "git push && git push --tags",
-    "release": "yarn lint && yarn build && commit-and-tag-version -a && git push --follow-tags origin master && yarn publish"
+    "release": "yarn lint && yarn build && commit-and-tag-version -a && git push --follow-tags origin master"
   },
   "keywords": [
     "homebridge",
     "homebridge-util"
   ],
+  "dependencies": {
+    "homebridge-lib": "^7.3.1"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.0",
-    "@types/node": "^24.0.0",
-    "commit-and-tag-version": "12.6.1",
+    "@types/node": "^24.10.1",
     "eslint": "^10.0.0",
     "homebridge": "^2.0.0-beta.0",
     "nodemon": "^3.1.9",
+    "commit-and-tag-version": "12.6.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.24.1"
-  },
-  "dependencies": {
-    "homebridge-lib": "^7.1.4"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4"
   }
 }

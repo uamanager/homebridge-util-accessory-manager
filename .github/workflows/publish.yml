@@ -1,0 +1,40 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: NPM
+      url: https://www.npmjs.com/package/homebridge-util-accessory-manager
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Lint the project
+        run: yarn lint
+
+      - name: Build the project
+        run: yarn build
+        env:
+          CI: true
+
+      - name: Publish Package
+        run: npm publish
