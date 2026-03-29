@@ -76,36 +76,36 @@
     "@eslint/core" "^1.1.1"
     levn "^0.4.1"
 
-"@homebridge/ciao@^1.3.5":
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/@homebridge/ciao/-/ciao-1.3.5.tgz#0dc279487a67245f281e517741c76c557fe0303e"
-  integrity sha512-f7MAw7YuoEYgJEQ1VyRcLHGuVmCpmXi65GVR8CAtPWPqIZf/HFr4vHzVpOfQMpEQw9Pt5uh07guuLt5HE8ruog==
+"@homebridge/ciao@^1.3.6":
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/@homebridge/ciao/-/ciao-1.3.6.tgz#9c39dfd3914367b8e85eaba9d6404317615997b4"
+  integrity sha512-2F9N/15Q/GnoBXimr8PFg7fb1QrAQBvuZpaW2kseWOOy14Lzc3yZB1mT9N1Ju/4hlkboU33uHxtOxZkvkPoE/w==
   dependencies:
     debug "^4.4.3"
     fast-deep-equal "^3.1.3"
     source-map-support "^0.5.21"
     tslib "^2.8.1"
 
-"@homebridge/dbus-native@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@homebridge/dbus-native/-/dbus-native-0.7.3.tgz#1d4dfbcf9554208803a66caecd5976765b13ea6e"
-  integrity sha512-21RywQjjJPssTNdz9gZtKquShzlIz8hDQ1SGAYmOWdoRwSsi+znCt10LAjDSXB8AVVMwothTm0KQx2KJSBhLAg==
+"@homebridge/dbus-native@^0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@homebridge/dbus-native/-/dbus-native-0.7.4.tgz#5f709107ea8e41d371e566cba8523d2c91fdbe7f"
+  integrity sha512-DtX16c/NNT/NJBFgy8qu74z/SZuAaS0GJahKIrS9ZZOYUHDtZYr1B4ZdjQlr+1NT7ZcCk6e84O4lAieiJq0Hsw==
   dependencies:
     event-stream "^4.0.1"
-    hexy "^0.3.5"
+    hexy "^0.4.0"
     long "^5.3.2"
     minimist "^1.2.8"
     safe-buffer "^5.1.2"
     xml2js "^0.6.2"
 
-"@homebridge/hap-nodejs@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@homebridge/hap-nodejs/-/hap-nodejs-2.1.1.tgz#dc0e6c5b4017a8dfaba8b0c520eea0be6ca8de62"
-  integrity sha512-V9cmVz2ar2xcP8MPj9YQQ9rVjWI+QMeSE6xdcGVA9gLvjEAe39D4YM3cN1R7KWx0W/t6SrOb4O4Gug3mV9w0rA==
+"@homebridge/hap-nodejs@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@homebridge/hap-nodejs/-/hap-nodejs-2.1.2.tgz#1912a314750401aa96349f28eeddb0bd662dcd63"
+  integrity sha512-IbUnjO+eKcW3PFZF6x5TQt0kdXwFLa7Fu8tGVQbXiKY/zbKBdeEPkhmayp0lurRoXEBHf8OmUcC+4A6ZBAtwOA==
   dependencies:
-    "@homebridge/ciao" "^1.3.5"
-    "@homebridge/dbus-native" "^0.7.3"
-    bonjour-hap "^3.10.0"
+    "@homebridge/ciao" "^1.3.6"
+    "@homebridge/dbus-native" "^0.7.4"
+    bonjour-hap "^3.10.1"
     debug "^4.4.3"
     fast-srp-hap "^2.0.4"
     futoin-hkdf "^1.5.3"
@@ -495,6 +495,15 @@ bonjour-hap@^3.10.0:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/bonjour-hap/-/bonjour-hap-3.10.0.tgz#a6b472f0ea7046fe73d74a4ef87426746773bc96"
   integrity sha512-2/jKd5X4WgvRQXIjwMtc26nT1cuD0DbAwmVJ9vq/IVvWUNxL7Tce3valQUXnkQ0yL38/jSmrXAUL2nPGZB9hGg==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    multicast-dns "^7.2.5"
+    multicast-dns-service-types "^1.1.0"
+
+bonjour-hap@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/bonjour-hap/-/bonjour-hap-3.10.1.tgz#12ec7a11ac78f2113013a04a194d590ab798dc74"
+  integrity sha512-StmRRG5LzJirg/1olvm2cWPJ/HeqrxyRa4cl2L6al0JoWJsH000uBM67R0RfBM3QAjcJrVjpMT3wDyg/v09osQ==
   dependencies:
     fast-deep-equal "^3.1.3"
     multicast-dns "^7.2.5"
@@ -1263,10 +1272,10 @@ hb-lib-tools@~2.2.17:
     chalk "^5.6.2"
     semver "^7.7.4"
 
-hexy@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/hexy/-/hexy-0.3.5.tgz#adcd5ee47d66aca3581d771743a509a5176e45f9"
-  integrity sha512-UCP7TIZPXz5kxYJnNOym+9xaenxCLor/JyhKieo8y8/bJWunGh9xbhy3YrgYJUQ87WwfXGm05X330DszOfINZw==
+hexy@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/hexy/-/hexy-0.4.0.tgz#28fa694cd59122f9b45f6fbfe42cbf96ba129331"
+  integrity sha512-HxJ6HCV/zrSBeAVRNEhr3CE6yTlCYklMHfCVfJkp7kC+HJqSP1SQ+howWPiHK37t++ELUtgoAoGJut5HyRhIvg==
 
 homebridge-lib@^7.3.1:
   version "7.3.1"
@@ -1277,11 +1286,11 @@ homebridge-lib@^7.3.1:
     hb-lib-tools "~2.2.17"
 
 homebridge@^2.0.0-beta.0:
-  version "2.0.0-beta.80"
-  resolved "https://registry.yarnpkg.com/homebridge/-/homebridge-2.0.0-beta.80.tgz#8d5db2408c1346fba2ac03cdf9df531957a100c9"
-  integrity sha512-mJYRBHEL6B0iyUQ/iazDiZ0qVuJohAu3MriB2PbMEPwHoPYk01NkSU5Vf0/+BIIuBWiuEiNthC3lKhYwxKGyFA==
+  version "2.0.0-beta.81"
+  resolved "https://registry.yarnpkg.com/homebridge/-/homebridge-2.0.0-beta.81.tgz#dfa81681f194b41b0d81070a22814a5e24eb3a42"
+  integrity sha512-r5KZwWqnBxzwSA72bwr49qALgsspASWkxIOMIPlqmoM5+BXHa1tMHsmnqzfXspiu4byj8FG0194my6VlReaXCA==
   dependencies:
-    "@homebridge/hap-nodejs" "2.1.1"
+    "@homebridge/hap-nodejs" "2.1.2"
     "@matter/main" "0.17.0-alpha.0-20260326-42b6f59b7"
     chalk "5.6.2"
     commander "14.0.3"
