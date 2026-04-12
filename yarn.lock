@@ -98,10 +98,10 @@
     safe-buffer "^5.1.2"
     xml2js "^0.6.2"
 
-"@homebridge/hap-nodejs@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@homebridge/hap-nodejs/-/hap-nodejs-2.1.2.tgz#1912a314750401aa96349f28eeddb0bd662dcd63"
-  integrity sha512-IbUnjO+eKcW3PFZF6x5TQt0kdXwFLa7Fu8tGVQbXiKY/zbKBdeEPkhmayp0lurRoXEBHf8OmUcC+4A6ZBAtwOA==
+"@homebridge/hap-nodejs@2.1.3-beta.0":
+  version "2.1.3-beta.0"
+  resolved "https://registry.yarnpkg.com/@homebridge/hap-nodejs/-/hap-nodejs-2.1.3-beta.0.tgz#351f06f21b90c558fbdd4b0222badb62129a7556"
+  integrity sha512-RnuXuCOD9SYVo8IVDH0tSPxAZxwalWqsoMeRoI82w9THyRI+JwO/qbRCLwRPYZlx8QCzD5X8rdQ/43NtYvUbwA==
   dependencies:
     "@homebridge/ciao" "^1.3.6"
     "@homebridge/dbus-native" "^0.7.4"
@@ -170,69 +170,69 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.5.tgz#4fc56c15c580b9adb7dc3c333a134e540b44bfb1"
   integrity sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==
 
-"@matter/general@0.17.0-alpha.0-20260326-42b6f59b7":
-  version "0.17.0-alpha.0-20260326-42b6f59b7"
-  resolved "https://registry.yarnpkg.com/@matter/general/-/general-0.17.0-alpha.0-20260326-42b6f59b7.tgz#516f08594e6c221cf03bc7231beccf758204cbd2"
-  integrity sha512-dyW7w03zNgUJpC4cyOSS9FWnMvGTXfsshAE/pXY6oHEZuQaWPeTIQLfGbJNCa18ZCTc73Bsb+xSTuvHjY85jzA==
+"@matter/general@0.17.0-alpha.0-20260410-75362b6ea":
+  version "0.17.0-alpha.0-20260410-75362b6ea"
+  resolved "https://registry.yarnpkg.com/@matter/general/-/general-0.17.0-alpha.0-20260410-75362b6ea.tgz#90c709e029c6faefdfa5236ffbef6ed6ab5ea95a"
+  integrity sha512-l27+oPgIyR6Duun1Ct3mqnLSS26i4AEje1sNePENLTkCrlAbkWiS2gy3b8wydWZPW4+Os4+bOvXdRDlkDPOH4Q==
   dependencies:
     "@noble/curves" "^2.0.1"
 
-"@matter/main@0.17.0-alpha.0-20260326-42b6f59b7":
-  version "0.17.0-alpha.0-20260326-42b6f59b7"
-  resolved "https://registry.yarnpkg.com/@matter/main/-/main-0.17.0-alpha.0-20260326-42b6f59b7.tgz#001afbbf11ee0ff7b35aef824fe7c3e17e0d160c"
-  integrity sha512-peezIxu2fhwEw/MQKjaELam91LOlJ++q0ttVrTRtINPaBBr0NsY3zBEq/UmTNeRmnv26XR46BU7f9RRtWRQdFA==
+"@matter/main@0.17.0-alpha.0-20260410-75362b6ea":
+  version "0.17.0-alpha.0-20260410-75362b6ea"
+  resolved "https://registry.yarnpkg.com/@matter/main/-/main-0.17.0-alpha.0-20260410-75362b6ea.tgz#cb20fdf166a00e4b1b152b3951a2bbf79b6a8be1"
+  integrity sha512-ROrMmFWzyGsl9nBXQeq3AwyekDEE5mPUgYNirUaMX9O7qkvJj0liGAcCisYj0/ylDimpdjC2jMK3IF3jPkg6fA==
   dependencies:
-    "@matter/general" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/model" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/node" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/protocol" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/types" "0.17.0-alpha.0-20260326-42b6f59b7"
+    "@matter/general" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/model" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/node" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/protocol" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/types" "0.17.0-alpha.0-20260410-75362b6ea"
   optionalDependencies:
-    "@matter/nodejs" "0.17.0-alpha.0-20260326-42b6f59b7"
+    "@matter/nodejs" "0.17.0-alpha.0-20260410-75362b6ea"
 
-"@matter/model@0.17.0-alpha.0-20260326-42b6f59b7":
-  version "0.17.0-alpha.0-20260326-42b6f59b7"
-  resolved "https://registry.yarnpkg.com/@matter/model/-/model-0.17.0-alpha.0-20260326-42b6f59b7.tgz#243065ccdb984916deae5f2ae4f685443f316d5a"
-  integrity sha512-qrY2GW+KV6jazT/dyvt0HUz+XBFal6zT9AXkRNiUh5baNLz0fYJpPgkEB/g2VX77pdvcakgcZH1au6HqpIusmQ==
+"@matter/model@0.17.0-alpha.0-20260410-75362b6ea":
+  version "0.17.0-alpha.0-20260410-75362b6ea"
+  resolved "https://registry.yarnpkg.com/@matter/model/-/model-0.17.0-alpha.0-20260410-75362b6ea.tgz#3032ee33bc211f49cd1e7084b809b500da2c8496"
+  integrity sha512-+bOA0Esn5IfychS+Sz4ynbnExiqhXENEiydkcvHAj1ORYdv/RGTMG9ryEAJhiXXsOgnqULph3qzxoIrLWAWEzg==
   dependencies:
-    "@matter/general" "0.17.0-alpha.0-20260326-42b6f59b7"
+    "@matter/general" "0.17.0-alpha.0-20260410-75362b6ea"
 
-"@matter/node@0.17.0-alpha.0-20260326-42b6f59b7":
-  version "0.17.0-alpha.0-20260326-42b6f59b7"
-  resolved "https://registry.yarnpkg.com/@matter/node/-/node-0.17.0-alpha.0-20260326-42b6f59b7.tgz#e2e5d8ebccc8acf43f4202c3b6b21b19cf6735b4"
-  integrity sha512-OyoJoz/xOrJQwBVOgwe3xo/PxgLfETxDreS9quAA4CmDARp/SN5g4IuTAZ5rCATxKq38SgmIzkd5ZHTP/YNljw==
+"@matter/node@0.17.0-alpha.0-20260410-75362b6ea":
+  version "0.17.0-alpha.0-20260410-75362b6ea"
+  resolved "https://registry.yarnpkg.com/@matter/node/-/node-0.17.0-alpha.0-20260410-75362b6ea.tgz#d1b40240f416181363b59911a54fc719e4bde962"
+  integrity sha512-W/HvbE7KM/j4iNdenT3AxS624FUJrp8stDsMPwtemsLBeaKl2+ofclVQ07gcV5T+vcxhOMEr+39B0ooonqW6lg==
   dependencies:
-    "@matter/general" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/model" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/protocol" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/types" "0.17.0-alpha.0-20260326-42b6f59b7"
+    "@matter/general" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/model" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/protocol" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/types" "0.17.0-alpha.0-20260410-75362b6ea"
 
-"@matter/nodejs@0.17.0-alpha.0-20260326-42b6f59b7":
-  version "0.17.0-alpha.0-20260326-42b6f59b7"
-  resolved "https://registry.yarnpkg.com/@matter/nodejs/-/nodejs-0.17.0-alpha.0-20260326-42b6f59b7.tgz#d113eff6c260289a1ed3856deae060e745d8cd96"
-  integrity sha512-xpk4628gaHgE60SsgP4UVv7pz3NW+VB47Oo1Uw+J2JuS9+s+4c5swaiitg67aDvOuMy4DVeqGXezneF2TSO6gw==
+"@matter/nodejs@0.17.0-alpha.0-20260410-75362b6ea":
+  version "0.17.0-alpha.0-20260410-75362b6ea"
+  resolved "https://registry.yarnpkg.com/@matter/nodejs/-/nodejs-0.17.0-alpha.0-20260410-75362b6ea.tgz#80fd431dc22cb7fe0f670996e1015ce193ddabe8"
+  integrity sha512-LbDNPdDAQiLWEMucmAtgiUmcN4QFu1x+B2U9CmhuPrPoVQTR6B3JuBXFEKdAqvVN0XVSmB3aFucaJkzb3H81KQ==
   dependencies:
-    "@matter/general" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/node" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/protocol" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/types" "0.17.0-alpha.0-20260326-42b6f59b7"
+    "@matter/general" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/node" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/protocol" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/types" "0.17.0-alpha.0-20260410-75362b6ea"
 
-"@matter/protocol@0.17.0-alpha.0-20260326-42b6f59b7":
-  version "0.17.0-alpha.0-20260326-42b6f59b7"
-  resolved "https://registry.yarnpkg.com/@matter/protocol/-/protocol-0.17.0-alpha.0-20260326-42b6f59b7.tgz#f086c22c39cde64f2c03afbd2321f20e6b3fd3aa"
-  integrity sha512-4lPlteLMSdu7xT2/KwjPdBqZ0N3nV0Ph/6avq5jeWsKMjvpqwuyyTaZAgK1al5/lRqHTcxshTIc8X02F4+GF4g==
+"@matter/protocol@0.17.0-alpha.0-20260410-75362b6ea":
+  version "0.17.0-alpha.0-20260410-75362b6ea"
+  resolved "https://registry.yarnpkg.com/@matter/protocol/-/protocol-0.17.0-alpha.0-20260410-75362b6ea.tgz#09d9a27dd3d891312a7ccb6deb5644b6cf8de3aa"
+  integrity sha512-A8lrpYPacWyV5FZDgJv/E4yODbL+gUgi1cDdDmWv6glOfWM0U9n+x+QgAdLlbiGKVfdOGG7hKLAxrZkMN8UM0Q==
   dependencies:
-    "@matter/general" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/model" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/types" "0.17.0-alpha.0-20260326-42b6f59b7"
+    "@matter/general" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/model" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/types" "0.17.0-alpha.0-20260410-75362b6ea"
 
-"@matter/types@0.17.0-alpha.0-20260326-42b6f59b7":
-  version "0.17.0-alpha.0-20260326-42b6f59b7"
-  resolved "https://registry.yarnpkg.com/@matter/types/-/types-0.17.0-alpha.0-20260326-42b6f59b7.tgz#5660badb437a4000506483833d50316c0750c185"
-  integrity sha512-HkW+ZcXG4zpIieYyioymtDK3P3Qby3JFDQNwVKp+Vr0kRKDrotXEJ4pOHgKiyHAlRlwtpNo8Tfv5dCIRYXHeCA==
+"@matter/types@0.17.0-alpha.0-20260410-75362b6ea":
+  version "0.17.0-alpha.0-20260410-75362b6ea"
+  resolved "https://registry.yarnpkg.com/@matter/types/-/types-0.17.0-alpha.0-20260410-75362b6ea.tgz#3d6db8355a682f57550bcde327763b6c10fb49c0"
+  integrity sha512-9PtSVATnoW8EmrHY6lMNAfsNV33xlmrWuApU4sE/8jQQ7z+bIBnLelai6fQnVzdRU7eghyIM3je30RI1/MuQLQ==
   dependencies:
-    "@matter/general" "0.17.0-alpha.0-20260326-42b6f59b7"
-    "@matter/model" "0.17.0-alpha.0-20260326-42b6f59b7"
+    "@matter/general" "0.17.0-alpha.0-20260410-75362b6ea"
+    "@matter/model" "0.17.0-alpha.0-20260410-75362b6ea"
 
 "@noble/curves@^2.0.1":
   version "2.0.1"
@@ -1286,12 +1286,12 @@ homebridge-lib@^7.3.1:
     hb-lib-tools "~2.2.17"
 
 homebridge@^2.0.0-beta.0:
-  version "2.0.0-beta.81"
-  resolved "https://registry.yarnpkg.com/homebridge/-/homebridge-2.0.0-beta.81.tgz#dfa81681f194b41b0d81070a22814a5e24eb3a42"
-  integrity sha512-r5KZwWqnBxzwSA72bwr49qALgsspASWkxIOMIPlqmoM5+BXHa1tMHsmnqzfXspiu4byj8FG0194my6VlReaXCA==
+  version "2.0.0-beta.87"
+  resolved "https://registry.yarnpkg.com/homebridge/-/homebridge-2.0.0-beta.87.tgz#175f062fea3321bed2b0242b6488ff5623f776fd"
+  integrity sha512-GaWifn8Wiy/ya5AOIgijzv9UDOprU0GWSj9jh3MUAJLP3EekfsR/6ay22CuqIMp6t7gVbLJKLaeOz5n/tVjj8A==
   dependencies:
-    "@homebridge/hap-nodejs" "2.1.2"
-    "@matter/main" "0.17.0-alpha.0-20260326-42b6f59b7"
+    "@homebridge/hap-nodejs" "2.1.3-beta.0"
+    "@matter/main" "0.17.0-alpha.0-20260410-75362b6ea"
     chalk "5.6.2"
     commander "14.0.3"
     fs-extra "11.3.4"
