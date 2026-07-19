@@ -1063,9 +1063,9 @@ homebridge-lib@^7.3.1:
     hb-lib-tools "~2.2.17"
 
 homebridge@^2.0.0-beta.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/homebridge/-/homebridge-2.2.0.tgz#4f84e1b63eb886b1a3b6aac74e60dd6acbdf92ea"
-  integrity sha512-7UG5tRrTAoibBnKOUaNw6O59WK7h2j+K8WCZUnciPinE4QVug3wYmZXhSPgn80jXRrJv+iaRItd2RJEHuQzndw==
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/homebridge/-/homebridge-2.2.1.tgz#9cb54142120d8256c91a10df95ebd34faf5a7cf0"
+  integrity sha512-U6VBjxMC4DoVx/v9D0FBTh6eZ2Vkis7DePY4vQlgxWxRNJ9G+Ul31tBy/rj7+k1oVhlihnWRwukWLRQ1ZO+52w==
   dependencies:
     "@homebridge/hap-nodejs" "2.1.9"
     "@matter/main" "0.17.6"
